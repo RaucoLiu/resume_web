@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    const card = document.querySelectorAll('.con>div');
+    const card = document.querySelectorAll('.con');
     // console.log(card);
 
     // Setup our function to run on various events
@@ -13,7 +13,7 @@ $(document).ready(function () {
 
             var shoesTop = card[idx].getBoundingClientRect().top;
             // console.log(shoesTop);
-            if (shoesTop < document.documentElement.clientHeight - 80) {
+            if (shoesTop < document.documentElement.clientHeight - 150) {
                 card[idx].classList.add('showup');
                 $(card[idx]).find('.yellow_text').addClass('showup');
                 $(card[idx]).find('span[class*="title"]').addClass('showup');
