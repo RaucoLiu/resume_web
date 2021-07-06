@@ -478,7 +478,7 @@ body{
     }
 
     div[class*="con_box"]{
-      flex-direction: column;
+      flex-direction: column-reverse;
       padding-bottom: 90px;
     }
 
