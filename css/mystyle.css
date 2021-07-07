@@ -193,7 +193,7 @@ body{
     transform: scale(1,1);
     transition: transform 1.5s;
   }
-  .con>div.showup>p:nth-of-type(3){
+  .con>div>p:nth-of-type(3){
     margin-bottom: 50px;
   }
 
