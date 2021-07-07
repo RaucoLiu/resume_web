@@ -151,9 +151,16 @@ body{
 
 
   .top_box{
-    height: 80vh;
-    background-color: antiquewhite;
-    background-image: url("../img/未命名-1.jpg");
+    height: 70vh;
+    display: flex;
+    padding-left: calc( (100% - 40vw * 2 ) / 2 );
+    justify-content: left;
+    align-items:center;
+    background-color: var(--color2);
+
+  }
+  .top_box>div{
+    padding-left: 10% ;
   }
 
   .bottom_box{
@@ -259,6 +266,10 @@ body{
   .sub_title.showup{
      transform: translateY(0);
     -ms-transform: translateY(0);
+  }
+  .top_box .title{
+    font-weight: 300;
+    line-height: 1.5;
   }
 
   /*------- text setting start-------*/
@@ -458,6 +469,14 @@ body{
 
 
   @media not all and (min-width: 768px) {
+    .top_box{
+      height: 80vh;
+      padding-left: calc( (100% - 80vw ) / 2 );
+  
+    }
+    .top_box>div{
+      padding-left: 10px ;
+    }
     .two_top{
       padding: 80px 0;
     }
