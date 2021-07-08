@@ -394,7 +394,7 @@ body{
     padding: 80px 0;
   }
   .card>div{
-    width: calc((100% - 30px) / 2);
+    width: calc((100% - 20px) / 2);
 
   }
   .card>.long_img{
@@ -402,7 +402,7 @@ body{
     text-align: center;
   }
   .card>.square{
-    width: calc((100% - 30px * 3) / 4);
+    width: calc((100% - 20px * 3) / 4);
   }
   .card>div>img{
     width: 100%;
