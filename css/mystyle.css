@@ -388,7 +388,8 @@ body{
   .card{
     display: flex;
     flex-wrap: wrap;
-    gap: 40px 20px;
+    /* gap: 40px 20px; */
+    gap: 40px;
   }
   .con.card{
     padding: 80px 0;
