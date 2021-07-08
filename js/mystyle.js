@@ -13,7 +13,7 @@ $(document).ready(function () {
 
             var shoesTop = card[idx].getBoundingClientRect().top;
             
-            if (shoesTop < document.documentElement.clientHeight - 100) {
+            if (shoesTop < document.documentElement.clientHeight - 80) {
                 card[idx].classList.add('showup');
                 $(card[idx]).find('.yellow_text').addClass('showup');
                 $(card[idx]).find('span[class*="title"]').addClass('showup');
