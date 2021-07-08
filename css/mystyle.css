@@ -125,49 +125,8 @@ body{
 /*------- .arrow animation end -------*/
 /*------- .arrow animation end -------*/
 
-.wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 10px 35px;
-  }
-  
-  .logo img {
-    width: 200px;
-  }
-  
-  .logo img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
-  
-  ul {
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    width: calc(100% - 200px);
-  }
-  
-  li:not(:last-child) {
-    margin-right: 50px;
-  }
-  
-  li a {
-    display: flex;
-    flex-direction: column;
-    font-weight: 700;
-    text-align: center;
-  }
-  
-  li a span {
-    color: #053e62;
-    font-size: 13px;
-  }
-
-
   .top_box{
-    height: 70vh;
+    height: 80vh;
     display: flex;
     padding-left: calc( (100% - 40vw * 2 ) / 2 );
     justify-content: left;
