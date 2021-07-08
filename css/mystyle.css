@@ -217,7 +217,7 @@ body{
     -webkit-transform: scale(1,1);
     -o-transform: scale(1,1);
     transition: transform 1.5s;
-  } */
+  }*/
 
   div[class*="con_box"]>div.showup:nth-of-type(even),
   div[class*="con_box"]>div.showup>p:nth-of-type(3){
