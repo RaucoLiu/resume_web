@@ -395,14 +395,16 @@ body{
   }
   .card>div{
     width: calc((100% - 20px) / 2);
-
+    -ms-flex:0 0 50%; /* IE */
   }
   .card>.long_img{
     width:100%;
     text-align: center;
+    -ms-flex:0 0 100%; /* IE */
   }
   .card>.square{
     width: calc((100% - 20px * 3) / 4);
+    -ms-flex:0 0 25%; /* IE */
   }
   .card>div>img{
     width: 100%;
@@ -510,9 +512,11 @@ body{
     }
     .card>div{
       width: 100%;
+      -ms-flex:0 0 100%; /* IE */
     }
     .card>.square{
       width: calc((100% - 30px) / 2);
+      -ms-flex:0 0 50%; /* IE */
     }
 
     div[class*="con_box"]:nth-of-type(1){
