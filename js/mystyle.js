@@ -1,19 +1,19 @@
 $(document).ready(function () {
-    const card = document.querySelectorAll('.con');
-    // console.log(card);
+
+    // IE不支援 forEach | const | 箭頭函式 替代方案
+    if (window.NodeList && !NodeList.prototype.forEach) {
+        NodeList.prototype.forEach = Array.prototype.forEach;
+    }
+
+    var card = document.querySelectorAll('.con>div');
 
     // Setup our function to run on various events
     var someFunction = function (event) {
-        // Do something...
-        card.forEach((elm, idx) => {
-            // 視窗高度 518-15=503
-            // card[0].getBoundingClientRect().top = 
-            // 424.0000305175781
-            // 429.0000305175781
+        card.forEach(function(elm, idx){
 
             var shoesTop = card[idx].getBoundingClientRect().top;
-            // console.log(shoesTop);
-            if (shoesTop < document.documentElement.clientHeight - 150) {
+            
+            if (shoesTop < document.documentElement.clientHeight - 200) {
                 card[idx].classList.add('showup');
                 $(card[idx]).find('.yellow_text').addClass('showup');
                 $(card[idx]).find('span[class*="title"]').addClass('showup');
@@ -21,7 +21,6 @@ $(document).ready(function () {
             // else {
                 // card[idx].classList.remove("showup");
             // }
-
         })
     };
 
@@ -30,4 +29,5 @@ $(document).ready(function () {
     window.addEventListener('scroll', someFunction, false);
     window.addEventListener('load', someFunction, false);
     window.addEventListener('change', someFunction, false);
+
 })
