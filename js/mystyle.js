@@ -5,7 +5,7 @@ $(document).ready(function () {
         NodeList.prototype.forEach = Array.prototype.forEach;
     }
 
-    var card = document.querySelectorAll('.con>');
+    var card = document.querySelectorAll('.con>div');
 
     // Setup our function to run on various events
     var someFunction = function (event) {
