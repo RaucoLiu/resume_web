@@ -26,8 +26,9 @@ $(document).ready(function () {
 
 
     // Add our event listeners
+    document.addEventListener( 'DOMContentLoaded', someFunction, false );
+    window.addEventListener('load', someFunction, false); //等到內部資源載入完畢才執行  
     window.addEventListener('scroll', someFunction, false);
-    window.addEventListener('load', someFunction, false);
     window.addEventListener('change', someFunction, false);
 
 })
