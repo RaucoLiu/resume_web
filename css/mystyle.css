@@ -491,6 +491,7 @@ body{
 
     .card{
       width: 80vw;
+      padding: 80px 0 50px 0;
     }
     
     /* IE替代方案 grid -> -ms-flexbox (start) */
